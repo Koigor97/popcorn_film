@@ -132,8 +132,10 @@ ul {
 
 /* Card */
 .card {
-  background: #04376b;
-  padding: 5px;
+  background: var(--color-secondary);
+  color: rgb(12, 12, 12);
+  outline: 1px solid var(--color-secondary);
+  border-radius: 0.5rem;
 }
 
 .card img {
@@ -148,7 +150,8 @@ ul {
 .card:hover {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
-  background: #0a4b8f;
+  background: var(--color-primary);
+  color: #fff;
 }
 
 /* Footer */
