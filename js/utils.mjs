@@ -1,6 +1,6 @@
 "use strict";
 
-export const global = {
+const global = {
   currentPage: window.location.pathname,
   search: {
     term: "",
@@ -74,6 +74,7 @@ export const renderHeaderAndFooter = async () => {
 // Display 20 most popular movies
 async function displayPopularMovies() {
   const { results } = await fetchAPIData("movie/popular");
+  console.log(results);
 
   results.forEach((movie) => {
     const div = document.createElement("div");
@@ -336,6 +337,7 @@ async function search() {
 
 function displaySearchResults(results) {
   // Clear previous results
+  console.log(results);
   document.querySelector("#search-results").innerHTML = "";
   document.querySelector("#search-results-heading").innerHTML = "";
   document.querySelector("#pagination").innerHTML = "";
