@@ -259,9 +259,6 @@ section h2 {
   margin-top: 20px;
 }
 
-.details-bottom {
-}
-
 .details-bottom li {
   margin: 15px 0;
   padding-bottom: 8px;
@@ -298,8 +295,9 @@ section h2 {
 
 .search-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  gap: 0.5rem;
   margin-top: 10px;
 }
 
@@ -325,6 +323,7 @@ section h2 {
 
 .search .container form button {
   flex: 1;
+  font-size: 1rem;
   display: block;
   width: 100%;
   padding: 10px;
