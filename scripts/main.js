@@ -1,21 +1,3 @@
-import { renderHeaderAndFooter, fetchAPIData } from "../js/utils.mjs";
-import { displayPopularMovies } from "../js/displayPopularMovies.mjs";
-import { displayPopularShows } from "../js/displayTvShows.mjs";
-import { displayMovieDetails } from "../js/displayMovieDetail.mjs";
-import { displayShowDetails } from "../js/displayTvShowDetail.mjs";
+import { init } from "../js/utils.mjs";
 
-// render the Header and Footer html
-renderHeaderAndFooter();
-
-displayPopularMovies();
-
-//
-displayMovieDetails();
-
-//
-displayPopularShows();
-
-//
-displayShowDetails();
-
-//
+document.addEventListener("DOMContentLoaded", init);
